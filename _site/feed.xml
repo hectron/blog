@@ -1,35 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hector's Blog</title>
-    <description>Hector's tech blog</description>
+    <title>Hector&#39;s Blog</title>
+    <description>Hector&#39;s tech blog</description>
     <link>http://hectron.github.io/blog/</link>
     <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Hello, Pixyll</title>
-        <description>&lt;p&gt;Hello.&lt;/p&gt;
+        <title>Setting up a blog</title>
+        <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
 
-&lt;p&gt;Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It’s mobile &lt;em&gt;first&lt;/em&gt;, fluidly responsive, and delightfully lightweight.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; with the &lt;a href=&quot;https://github.com/johnotander/pixyll&quot;&gt;Pixyll
+theme&lt;/a&gt;, with all my posts living
+within &lt;a href=&quot;https://github.com/hectron/blog&quot;&gt;my blog’s GitHub repository&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;It’s pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;
-    Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
-  &lt;/p&gt;
-  &lt;footer&gt;&lt;cite title=&quot;Antoine de Saint-Exupéry&quot;&gt;Antoine de Saint-Exupéry&lt;/cite&gt;&lt;/footer&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;We’re in a strange time in technology. Voicing your opinion online has
+never been easier. There are infinite resources to create a blog online,
+many claiming to be the best or claim to provide a productive workflow.
+How does one decide which to use?&lt;/p&gt;
 
-&lt;h2 id=&quot;where-is-it&quot;&gt;Where is it?&lt;/h2&gt;
+&lt;h2 id=&quot;there-is-not-a-one-size-fit-all&quot;&gt;There is not a one-size-fit-all&lt;/h2&gt;
 
-&lt;p&gt;Checkout the &lt;a href=&quot;https://github.com/johnotander/pixyll&quot;&gt;Github repository&lt;/a&gt; to download it, request a feature, or report a bug.&lt;/p&gt;
+&lt;p&gt;Unfortunately, this is true. Consider managing documents.&lt;/p&gt;
 
-&lt;p&gt;It’s free, and open source (&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Some people are productive by keeping everything in their desktop,
+others are most productive by keeping everything on a
+&lt;a href=&quot;https://dropbox.com/&quot;&gt;Dropbox&lt;/a&gt;, others keep everything in a &lt;a href=&quot;https://bitbucket.org/&quot;&gt;private
+repository&lt;/a&gt;. The truth of the matter is you need
+to choose what’s best for &lt;em&gt;you&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-i-settled-on-jekyll&quot;&gt;Why I settled on Jekyll&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;I’ve been tossing around the idea of abandoning my desktop
+environment.&lt;/em&gt; I currently use a custom built desktop computer which I
+have not been able to game on. In an effort to take a more minimal
+approach, I have started to back up a lot of my data into my GitHub. I
+have over 3 TB of space in my desktop, of which &lt;em&gt;I personally&lt;/em&gt; use about
+200 MB of, most of which is code I write.&lt;/p&gt;
+
+&lt;p&gt;I also like to write during my commute, so I would like a blog that can
+be worked on offline and then uploaded when I feel like the content is
+decent enough. I have been doing a lot of Javascript development lately,
+and one platform that caught my eye is &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;.
+Ghost is a blogging platform that runs on &lt;a href=&quot;https://nodejs.org&quot;&gt;NodeJS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Due to the fact that I’m aiming to &lt;em&gt;simplify&lt;/em&gt; my life, I don’t want to
+lose sight of my end goal (which is writing) by having to worry about
+how to configure, host and maintain my system. Similarly, I don’t want
+to have another place on the internet where my password is used, even if
+I rely on password managers.&lt;/p&gt;
+
+&lt;p&gt;Since I always interact with my git repositories, I figured that
+anything which could be maintained using Vim &amp;amp; Git is going to be a
+winner. Enter Jekyll.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-power-of-community&quot;&gt;The power of community&lt;/h2&gt;
+
+&lt;p&gt;One thing which Jekyll has going for it is it’s extensive documentation
+and community. It’s very extensible and can very easily be tweaked.
+Combine it’s ability to be run on multiple environments along with
+integrating with &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;, and you have
+a combination that’s hard to beat (at least if you’re a developer who is
+unafraid of the terminal).&lt;/p&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/johnotander/pixyll&quot;&gt;Pixyll theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Wed, 11 Jun 2014 15:31:19 +0000</pubDate>
-        <link>http://hectron.github.io/blog/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</guid>
+        <pubDate>Sat, 07 Feb 2015 10:47:00 -0600</pubDate>
+        <link>http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</link>
+        <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</guid>
       </item>
     
   </channel>

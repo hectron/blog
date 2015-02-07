@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Setting up a blog &#8211; Hector's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sometimes setting up a blog is easy. I made mine with Jekyll.">
+    <meta name="author" content="Hector Rios">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/pixyll.css?201502071728" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Setting up a blog">
+    <meta property="og:description" content="Hector's tech blog">
+    <meta property="og:url" content="http://hectron.github.io/2015/02/07/setting-up-a-blog/">
+    <meta property="og:site_name" content="Hector's Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <nav class="site-nav right">
+        <a href="/blog/about/">About</a>
+<a href="/blog/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Setting up a blog</h1>
+  <span class="post-meta">Feb 7, 2015</span><br>
+    
+  <span class="post-meta small">
+  
+    2 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h2 id="tl-dr">TL; DR</h2>
+
+<p>I used <a href="http://jekyllrb.com/">Jekyll</a> with the <a href="https://github.com/johnotander/pixyll">Pixyll
+theme</a>, with all my posts living
+within <a href="https://github.com/hectron/blog">my blog’s GitHub repository</a>.</p>
+
+<hr />
+
+<p>We’re in a strange time in technology. Voicing your opinion online has
+never been easier. There are infinite resources to create a blog online,
+many claiming to be the best or claim to provide a productive workflow.
+How does one decide which to use?</p>
+
+<h2 id="there-is-not-a-one-size-fit-all">There is not a one-size-fit-all</h2>
+
+<p>Unfortunately, this is true. Consider managing documents.</p>
+
+<p>Some people are productive by keeping everything in their desktop,
+others are most productive by keeping everything on a
+<a href="https://dropbox.com/">Dropbox</a>, others keep everything in a <a href="https://bitbucket.org/">private
+repository</a>. The truth of the matter is you need
+to choose what’s best for <em>you</em>.</p>
+
+<h2 id="why-i-settled-on-jekyll">Why I settled on Jekyll</h2>
+
+<p><em>I’ve been tossing around the idea of abandoning my desktop
+environment.</em> I currently use a custom built desktop computer which I
+have not been able to game on. In an effort to take a more minimal
+approach, I have started to back up a lot of my data into my GitHub. I
+have over 3 TB of space in my desktop, of which <em>I personally</em> use about
+200 MB of, most of which is code I write.</p>
+
+<p>I also like to write during my commute, so I would like a blog that can
+be worked on offline and then uploaded when I feel like the content is
+decent enough. I have been doing a lot of Javascript development lately,
+and one platform that caught my eye is <a href="https://ghost.org/">Ghost</a>.
+Ghost is a blogging platform that runs on <a href="https://nodejs.org">NodeJS</a>.</p>
+
+<p>Due to the fact that I’m aiming to <em>simplify</em> my life, I don’t want to
+lose sight of my end goal (which is writing) by having to worry about
+how to configure, host and maintain my system. Similarly, I don’t want
+to have another place on the internet where my password is used, even if
+I rely on password managers.</p>
+
+<p>Since I always interact with my git repositories, I figured that
+anything which could be maintained using Vim &amp; Git is going to be a
+winner. Enter Jekyll.</p>
+
+<h2 id="the-power-of-community">The power of community</h2>
+
+<p>One thing which Jekyll has going for it is it’s extensive documentation
+and community. It’s very extensible and can very easily be tweaked.
+Combine it’s ability to be run on multiple environments along with
+integrating with <a href="https://pages.github.com/">GitHub Pages</a>, and you have
+a combination that’s hard to beat (at least if you’re a developer who is
+unafraid of the terminal).</p>
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+  <li><a href="https://github.com/">GitHub</a></li>
+  <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+  <li><a href="http://jekyllrb.com">Jekyll</a></li>
+  <li><a href="https://github.com/johnotander/pixyll">Pixyll theme</a></li>
+</ul>
+
+</article>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
