@@ -1,10 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hector&#39;s Blog</title>
-    <description>Hector&#39;s tech blog</description>
+    <title>Hector's Blog</title>
+    <description>Hector's tech blog</description>
     <link>http://hectron.github.io/blog/</link>
     <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Using Nitrous.IO for Web Development</title>
+        <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
+
+&lt;p&gt;You can create a very functional development environment on Nitrous that is
+accessible from anywhere that has an internet connection. Unfortunately, this is
+a flaw. Without a fast connection, Nitrious might not be very accessible.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Technologists are familiar with &lt;a href=&quot;http://en.wikipedia.org/wiki/Moore%27s_law&quot;&gt;Moore’s
+Law&lt;/a&gt; which states that the number of
+transistors doubles every two years. In turn, this affects our computeres and
+phones by allowing us to have more processing power. &lt;/p&gt;
+
+&lt;p&gt;But what happens when your processing power is so efficient that each hardware
+upgrade is less enticing?&lt;/p&gt;
+
+&lt;p&gt;Personally, I consolidate my hardware to optimize it for Software engineering.&lt;/p&gt;
+
+&lt;h2 id=&quot;developing-a-plan&quot;&gt;Developing a plan&lt;/h2&gt;
+
+&lt;p&gt;I found myself using the terminal and Google Chrome a lot. I use Virtual
+machines for doing development on Linux environments.&lt;/p&gt;
+
+&lt;p&gt;My desktop is a custom built gaming computer that is seriously over-powered and
+ridiculously underused; I don’t really consume much media on my computer except
+for light video watching on Netflix. &lt;/p&gt;
+
+&lt;p&gt;Most of my media is stored in &lt;a href=&quot;https://dropbox.com/&quot;&gt;the cloud&lt;/a&gt;,
+&lt;a href=&quot;https://www.github.com/&quot;&gt;GitHub&lt;/a&gt; or in a &lt;a href=&quot;http://www.newegg.com/Product/Product.aspx?Item=N82E16822236519&quot;&gt;2 TB Western Digital Hard
+Drive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s take inventory here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A terminal&lt;/li&gt;
+  &lt;li&gt;A browser&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;when-life-gives-you-saas-you-take-it&quot;&gt;When life gives you SaaS, you take it&lt;/h2&gt;
+
+&lt;p&gt;There are &lt;a href=&quot;http://lifehacker.com&quot;&gt;plenty of websites&lt;/a&gt; out there that teach you
+how to make use of many cloud services in creative ways. Seeing as how it’s
+increasingly difficult to not be connected in online services, I decided to
+&lt;strong&gt;endure&lt;/strong&gt; the cloud and try out &lt;a href=&quot;https://nitrous.io/&quot;&gt;Nitrous.IO&lt;/a&gt; to do my web
+development from an online IDE. &lt;/p&gt;
+
+&lt;h2 id=&quot;the-things-it-does-good&quot;&gt;The things it does good&lt;/h2&gt;
+
+&lt;p&gt;Nitrous offers a &lt;a href=&quot;https://chrome.google.com/webstore/detail/nitrousio-web-app/kcbmakmdbnehgbakmgibcpjpafenmohd?hl=en&quot;&gt;Google Chrome
+App&lt;/a&gt;
+that is amazing if you log into Chrome. This allows you to have Nitrous
+installed on any Chrome you want.&lt;/p&gt;
+
+&lt;p&gt;The terminal it provides is a full-fledged Linux bash terminal, which means that
+most of your favorite dotfiles can be implemented in the terminal. I was able to
+set up a NodeJS server very quickly, and had a fully functional development
+environment thanks to migrating my dotfiles to a Git repository.&lt;/p&gt;
+
+&lt;p&gt;Do not underestimate the ability to have a fully functional development
+environment within minutes, that can be accessed from anywhere, on any kind of
+machine. While this might be scary to some, it’s not nearly as bad as you’d
+think.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-things-it-does-bad&quot;&gt;The things it does bad&lt;/h2&gt;
+
+&lt;p&gt;Nitrous can be slow at times, and it requires you to have a fast internet
+connection. Without a fast internet connection, Nitrous can be slow and lag when
+doing any text editing.&lt;/p&gt;
+
+&lt;p&gt;Having to set up an account on Nitrous might be another flaw for people.&lt;/p&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nitrous.io/&quot;&gt;Nitrous&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lifehacker.com/&quot;&gt;LifeHacker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 15 Feb 2015 12:00:00 +0000</pubDate>
+        <link>http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</link>
+        <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</guid>
+      </item>
     
       <item>
         <title>Setting up a blog</title>
@@ -74,7 +160,7 @@ unafraid of the terminal).&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/johnotander/pixyll&quot;&gt;Pixyll theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 07 Feb 2015 10:47:00 -0600</pubDate>
+        <pubDate>Sat, 07 Feb 2015 16:47:00 +0000</pubDate>
         <link>http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</link>
         <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</guid>
       </item>

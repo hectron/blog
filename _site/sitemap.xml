@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</loc>
+    <lastmod>2015-02-15T12:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</loc>
-    <lastmod>2015-02-07T10:47:00-06:00</lastmod>
+    <lastmod>2015-02-07T16:47:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/404.html</loc>
-    <lastmod>2015-02-07T17:28:26-06:00</lastmod>
+    <lastmod>2015-02-16T04:17:28+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/about/</loc>
-    <lastmod>2015-02-07T17:28:26-06:00</lastmod>
+    <lastmod>2015-02-16T04:17:28+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/contact/</loc>
-    <lastmod>2015-02-07T17:28:26-06:00</lastmod>
+    <lastmod>2015-02-16T04:17:28+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/</loc>
-    <lastmod>2015-02-07T17:28:26-06:00</lastmod>
+    <lastmod>2015-02-16T04:17:28+00:00</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Using Nitrous.IO for Web Development &#8211; Hector's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nitrous offers a portable web development environment that works surprisingly well">
+    <meta name="author" content="Hector Rios">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://hectron.github.io/blog/2015/02/15/using-nitrous-io/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/pixyll.css?201502160417" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Using Nitrous.IO for Web Development">
+    <meta property="og:description" content="Hector's tech blog">
+    <meta property="og:url" content="http://hectron.github.io/2015/02/15/using-nitrous-io/">
+    <meta property="og:site_name" content="Hector's Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <nav class="site-nav right">
+        <a href="/blog/about/">About</a>
+<a href="/blog/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Using Nitrous.IO for Web Development</h1>
+  <span class="post-meta">Feb 15, 2015</span><br>
+    
+  <span class="post-meta small">
+  
+    2 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h2 id="tl-dr">TL; DR</h2>
+
+<p>You can create a very functional development environment on Nitrous that is
+accessible from anywhere that has an internet connection. Unfortunately, this is
+a flaw. Without a fast connection, Nitrious might not be very accessible.</p>
+
+<hr />
+
+<p>Technologists are familiar with <a href="http://en.wikipedia.org/wiki/Moore%27s_law">Moore’s
+Law</a> which states that the number of
+transistors doubles every two years. In turn, this affects our computeres and
+phones by allowing us to have more processing power. </p>
+
+<p>But what happens when your processing power is so efficient that each hardware
+upgrade is less enticing?</p>
+
+<p>Personally, I consolidate my hardware to optimize it for Software engineering.</p>
+
+<h2 id="developing-a-plan">Developing a plan</h2>
+
+<p>I found myself using the terminal and Google Chrome a lot. I use Virtual
+machines for doing development on Linux environments.</p>
+
+<p>My desktop is a custom built gaming computer that is seriously over-powered and
+ridiculously underused; I don’t really consume much media on my computer except
+for light video watching on Netflix. </p>
+
+<p>Most of my media is stored in <a href="https://dropbox.com/">the cloud</a>,
+<a href="https://www.github.com/">GitHub</a> or in a <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16822236519">2 TB Western Digital Hard
+Drive</a>.</p>
+
+<p>Let’s take inventory here:</p>
+
+<ul>
+  <li>A terminal</li>
+  <li>A browser</li>
+</ul>
+
+<h2 id="when-life-gives-you-saas-you-take-it">When life gives you SaaS, you take it</h2>
+
+<p>There are <a href="http://lifehacker.com">plenty of websites</a> out there that teach you
+how to make use of many cloud services in creative ways. Seeing as how it’s
+increasingly difficult to not be connected in online services, I decided to
+<strong>endure</strong> the cloud and try out <a href="https://nitrous.io/">Nitrous.IO</a> to do my web
+development from an online IDE. </p>
+
+<h2 id="the-things-it-does-good">The things it does good</h2>
+
+<p>Nitrous offers a <a href="https://chrome.google.com/webstore/detail/nitrousio-web-app/kcbmakmdbnehgbakmgibcpjpafenmohd?hl=en">Google Chrome
+App</a>
+that is amazing if you log into Chrome. This allows you to have Nitrous
+installed on any Chrome you want.</p>
+
+<p>The terminal it provides is a full-fledged Linux bash terminal, which means that
+most of your favorite dotfiles can be implemented in the terminal. I was able to
+set up a NodeJS server very quickly, and had a fully functional development
+environment thanks to migrating my dotfiles to a Git repository.</p>
+
+<p>Do not underestimate the ability to have a fully functional development
+environment within minutes, that can be accessed from anywhere, on any kind of
+machine. While this might be scary to some, it’s not nearly as bad as you’d
+think.</p>
+
+<h2 id="the-things-it-does-bad">The things it does bad</h2>
+
+<p>Nitrous can be slow at times, and it requires you to have a fast internet
+connection. Without a fast internet connection, Nitrous can be slow and lag when
+doing any text editing.</p>
+
+<p>Having to set up an account on Nitrous might be another flaw for people.</p>
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+  <li><a href="https://github.com/">GitHub</a></li>
+  <li><a href="https://nitrous.io/">Nitrous</a></li>
+  <li><a href="http://lifehacker.com/">LifeHacker</a></li>
+</ul>
+
+</article>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
