@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rewriting Git history for fun and profit &#8211; Hector's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="If you are paranoid like me, you make a lot of commits. Sometimes, you need to arrange changes in logical segments.">
+    <meta name="author" content="Hector Rios">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://hectron.github.io/blog/2015/02/22/rewriting-git-history/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/pixyll.css?201503022040" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Rewriting Git history for fun and profit">
+    <meta property="og:description" content="Hector's tech blog">
+    <meta property="og:url" content="http://hectron.github.io/2015/02/22/rewriting-git-history/">
+    <meta property="og:site_name" content="Hector's Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <nav class="site-nav right">
+        <a href="/blog/about/">About</a>
+<a href="/blog/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Rewriting Git history for fun and profit</h1>
+  <span class="post-meta">Feb 22, 2015</span><br>
+    
+  <span class="post-meta small">
+  
+    3 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h2 id="tl-dr">TL; DR</h2>
+
+<p>You can appear like a competent programmer by rewriting your commit
+history with the following commands:</p>
+
+<p><code>git reset HEAD~n</code> where n is the number of prior commits.</p>
+
+<p><code>git add --patch</code> to select the changes you want to include in a commit.</p>
+
+<hr />
+
+<p>If you are like me, then you are likely to make a lot of Git commits.
+Your commits might address spacing issues in code, or renaming variables
+only to rename them back. You might be forced to fix a bug in the
+process of working on your feature.</p>
+
+<p>If you find a lot of unrelated data in a commit, you might want to
+consider rewriting your commit history. This good shows you how to
+rewrite history assuming that your changes are the latest changes in the
+branch.</p>
+
+<p><strong>NOTE</strong>: I oppose rewriting history on your <strong>master</strong> branch. This is
+considered bad practice and is discouraged.</p>
+
+<h2 id="developing-a-plan">Developing a plan</h2>
+
+<p>When you are going to rewrite your Git commit history, you need to
+identify what the purpose of the rewrite is. Are you trying to group all
+your changes to a test suite? Are you creating new database migrations?
+Are you working on two different components that are unrelated?
+<em>Identify what you want to accomplish</em>.</p>
+
+<p>For the purpose of this tutorial, we will suppose that I grouped a
+commit where I modified an HTML page, along with tweak it’s CSS and
+added some javascript functions. My desired goal is to group all the
+changes I made to the HTML markup in one commit, group all the CSS
+changes in another commit and group all the Javascript changes in their
+own commit.</p>
+
+<p>Here is what my original commit looked like:</p>
+
+<pre><code>commit 23106d0d38bd5a774d61f4632839d6fb61f20c66 Author: Hector Rios
+&lt;my@email.com&gt; Date:   Fri Feb 13 15:26:22 2015 -0600
+
+    Updated my Contact page.
+</code></pre>
+
+<h2 id="breaking-the-bad">Breaking (the) bad</h2>
+
+<p>The first step you need to do is rollback the changes in that commit so
+that we can split them up into individual commits. To do this, do the
+following:</p>
+
+<p><code>git reset HEAD^</code></p>
+
+<p>This will go back one commit and unstage your commit’s changes. So now,
+you want to run the command <code>git add --patch</code>. This will bring an
+interactive prompt in which you can select whether or not to stage that
+change. In our case, we want to include only the changes we made to the
+<code>*.html</code> file.</p>
+
+<p>Once we selected all the changes, we commit that change, and move on to
+the next file. When we do this to our stylesheets and javascript files,
+we will now have three commits.</p>
+
+<p>Pretty nifty right? How about if we wanted to group by feature? Let’s do
+that instead now.</p>
+
+<h2 id="undoing-our-changes-and-grouping-by-feature">Undoing our changes and grouping by feature</h2>
+
+<p>Since we now have three commits of our theoretical HTML/CSS/JS pages, we
+need to undo all three commits. I personally squash the commits and then
+repeat the trick above. So the commands look like:</p>
+
+<pre><code>git rebase -i HEAD~3 (Then squash them into one commit) 
+git reset HEAD^ 
+git add --patch (select the chunks that relate to your feature)
+</code></pre>
+
+<p>This way you can combine the changes per feature and commit them
+individually.</p>
+
+<h2 id="final-notes">Final notes</h2>
+
+<p>The idea is that you combine your commits into one, then undo the
+changes so that they are all unstaged. You then strategically stage them
+and commit them. This way, your git history is logical.</p>
+
+
+</article>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
