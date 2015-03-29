@@ -7,6 +7,106 @@
     <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Using IFTTT to leverage the invisble hand</title>
+        <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
+
+&lt;p&gt;You can set up a custom recipe in &lt;a href=&quot;https://ifttt.com&quot;&gt;IFTTT&lt;/a&gt; to alert you
+whenever a new listing is available on &lt;a href=&quot;http://craigslist.org/&quot;&gt;Craigslist&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Keep &lt;a href=&quot;https://ifttt.com/recipes/229-send-yourself-emails-for-new-craigslist-postings-from-any-search-you-re-interested-in&quot;&gt;this website loaded in the
+background&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On &lt;a href=&quot;http://craigslist.org/&quot;&gt;Craigslist&lt;/a&gt;, perform a search, copy the URL from
+the address bar after the search has been performed, paste it into the search
+URL box in the IFTTT, enter in your e-mail, and make the recipe!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-little-background&quot;&gt;A little background&lt;/h2&gt;
+
+&lt;p&gt;One thing my readers should know is that I’m a stan of music – all variety of
+music. This is likely because I consider myself a hobbiest musician. As a
+result, I suffer from what other musicians call &lt;strong&gt;GAS&lt;/strong&gt; (not necessarily the
+result of dietary choices). &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GAS&lt;/strong&gt; is known in the musician’s community as
+&lt;strong&gt;Gear Acquisition Syndrome&lt;/strong&gt;; &lt;strong&gt;GAS&lt;/strong&gt; means that you love collection gear.&lt;/p&gt;
+
+&lt;p&gt;I currently use a &lt;a href=&quot;http://www.voxshowroom.com/uk/amp/ad30.html&quot;&gt;Vox AD30VT&lt;/a&gt;, a
+small amp that has a tube in the preamp. It was OK for small band practices,
+but the clean volume was just not cutting it – I need more wattage.&lt;/p&gt;
+
+&lt;p&gt;Before starting my quest to purchase an amp, I decided that whatever amp I got
+needed to have the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Affordability&lt;/li&gt;
+  &lt;li&gt;Reliability&lt;/li&gt;
+  &lt;li&gt;Volume&lt;/li&gt;
+  &lt;li&gt;Clean headroom&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In short, I wanted a tube amp that was realible and affordable. I set a budget
+of $500 USD and performed research. &lt;/p&gt;
+
+&lt;p&gt;After a few searches, I came to the
+conclusion that a &lt;a href=&quot;http://www.fender.com/guitar-amplifiers/vintage-pro-tube/blues-deluxe-reissue/product-223220.html&quot;&gt;Fender Blues
+Deluxe&lt;/a&gt;
+or a &lt;a href=&quot;http://peavey.com/products/index.cfm/item/801/118120/Classic%2030&quot;&gt;Peavey
+Classic&lt;/a&gt;
+would have to be the amp that I choose.&lt;/p&gt;
+
+&lt;p&gt;Because these amps are just over my budget, enter Craigslist.&lt;/p&gt;
+
+&lt;h2 id=&quot;leveraging-if-this-then-that-ifttt&quot;&gt;Leveraging If This Then That (IFTTT)&lt;/h2&gt;
+
+&lt;p&gt;As soon as I thought about monitoring a search query and ensuring I was
+up-to-date with the search queries, I thought about automating this using
+&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt;. The idea is that I would perform a search query,
+and anytime a new result was returned, I would get notified ASAP so that I
+could act on it.&lt;/p&gt;
+
+&lt;p&gt;I’m using &lt;a href=&quot;https://ifttt.com/recipes/229-send-yourself-emails-for-new-craigslist-postings-from-any-search-you-re-interested-in&quot;&gt;this following recipe to monitor Craigslist
+changes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first thing I did was perform the search query that I needed. After that, I
+copied the URL from the search result and pasted it into the Craiglist box
+within the recipe page. &lt;/p&gt;
+
+&lt;p&gt;I then entered an e-mail address and saved the recipe. After it was saved, I
+went into My Recipes and ended up modifying it. I changed the subject of the 
+e-mail to be &lt;code&gt;[CL Deal] Peavey Classic&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, if you’re reading this blog, then you know I’m a bit more… unique
+than the average internet user. Therefore, I ended up creating three different
+alerts. Each one using the same term, but with a different maximum price.&lt;/p&gt;
+
+&lt;p&gt;This allowed me to change the subject of the e-mail that will be sent to myself
+to something like &lt;code&gt;[CL BUY THIS NOW] Peavey Classic&lt;/code&gt; or something of that
+nature.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-not-use-craigslist-alerts&quot;&gt;Why not use Craigslist alerts?&lt;/h2&gt;
+
+&lt;p&gt;I’m not going to lie – I didn’t know Craigslist alerts existed. Knowing that
+now, I realize that one benefit that you have by using IFTTT is that you have a
+centralized location for all your queries. Additionally, IFTTT will alert you
+whenever something goes wrong with the service/integration.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-notes&quot;&gt;Final notes&lt;/h2&gt;
+
+&lt;p&gt;Leveraging web automation tools like &lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; is a great way
+to look for deals or to get alerts (weather, movies, etc). Hopefully by
+leveraging these automation tools, I could stop hawking websites during work
+hours and just wait for the deals to come to me rather than the other way
+around.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 28 Mar 2015 12:00:00 +0000</pubDate>
+        <link>http://hectron.github.io/blog/2015/03/28/ifttt/</link>
+        <guid isPermaLink="true">http://hectron.github.io/blog/2015/03/28/ifttt/</guid>
+      </item>
+    
+      <item>
         <title>Rewriting Git history for fun and profit</title>
         <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
 

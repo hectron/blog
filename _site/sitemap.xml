@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://hectron.github.io/blog/2015/03/28/ifttt/</loc>
+    <lastmod>2015-03-28T12:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://hectron.github.io/blog/2015/02/22/rewriting-git-history/</loc>
     <lastmod>2015-02-22T12:00:00+00:00</lastmod>
   </url>
@@ -14,18 +18,18 @@
   </url>
   <url>
     <loc>http://hectron.github.io/blog/404.html</loc>
-    <lastmod>2015-03-02T20:40:53+00:00</lastmod>
+    <lastmod>2015-03-29T01:01:49+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/about/</loc>
-    <lastmod>2015-03-02T20:40:53+00:00</lastmod>
+    <lastmod>2015-03-29T01:01:49+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/contact/</loc>
-    <lastmod>2015-03-02T20:40:53+00:00</lastmod>
+    <lastmod>2015-03-29T01:01:49+00:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/</loc>
-    <lastmod>2015-03-02T20:40:53+00:00</lastmod>
+    <lastmod>2015-03-29T01:01:49+00:00</lastmod>
   </url>
 </urlset>

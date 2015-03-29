@@ -1,0 +1,98 @@
+---
+layout:     post
+title:      Using IFTTT to leverage the invisible hand
+date:       2015-03-28 12:00:00
+summary:    I used IFTTT to help me find a new guitar amplifier.
+---
+
+## TL; DR
+
+You can set up a custom recipe in [IFTTT](https://ifttt.com) to alert you
+whenever a new listing is available on [Craigslist](http://craigslist.org/). 
+
+Keep [this website loaded in the
+background](https://ifttt.com/recipes/229-send-yourself-emails-for-new-craigslist-postings-from-any-search-you-re-interested-in).
+
+On [Craigslist](http://craigslist.org/), perform a search, copy the URL from
+the address bar after the search has been performed, paste it into the search
+URL box in the IFTTT, enter in your e-mail, and make the recipe!
+
+----------
+
+## A little background
+
+One thing my readers should know is that I'm a stan of music -- all variety of
+music. This is likely because I consider myself a hobbyist musician. As a
+result, I suffer from what other musicians call **GAS** (not necessarily the
+result of dietary choices). 
+
+**GAS** is known in the musician's community as
+**Gear Acquisition Syndrome**; **GAS** means that you love collection gear.
+
+I currently use a [Vox AD30VT](http://www.voxshowroom.com/uk/amp/ad30.html), a
+small amp that has a tube in the preamp. It was OK for small band practices,
+but the clean volume was just not cutting it -- I need more wattage.
+
+Before starting my quest to purchase an amp, I decided that whatever amp I got
+needed to have the following:
+
+- Affordability
+- Reliability
+- Volume
+- Clean headroom
+
+In short, I wanted a tube amp that was reliable and affordable. I set a budget
+of $500 USD and performed research. 
+
+After a few searches, I came to the
+conclusion that a [Fender Blues
+Deluxe](http://www.fender.com/guitar-amplifiers/vintage-pro-tube/blues-deluxe-reissue/product-223220.html)
+or a [Peavey
+Classic](http://peavey.com/products/index.cfm/item/801/118120/Classic%2030)
+would have to be the amp that I choose.
+
+Because these amps are just over my budget, enter Craigslist.
+
+## Leveraging If This Then That (IFTTT)
+
+As soon as I thought about monitoring a search query and ensuring I was
+up-to-date with the search queries, I thought about automating this using
+[IFTTT](https://ifttt.com/). The idea is that I would perform a search query,
+and anytime a new result was returned, I would get notified ASAP so that I
+could act on it.
+
+I'm using [this following recipe to monitor Craigslist
+changes](https://ifttt.com/recipes/229-send-yourself-emails-for-new-craigslist-postings-from-any-search-you-re-interested-in).
+
+The first thing I did was perform the search query that I needed. After that, I
+copied the URL from the search result and pasted it into the Craiglist box
+within the recipe page. 
+
+I then entered an e-mail address and saved the recipe. After it was saved, I
+went into My Recipes and ended up modifying it. I changed the subject of the 
+e-mail to be `[CL Deal] Peavey Classic`.
+
+However, if you're reading this blog, then you know I'm a bit more... unique
+than the average internet user. Therefore, I ended up creating three different
+alerts. Each one using the same term, but with a different maximum price.
+
+This allowed me to change the subject of the e-mail that will be sent to myself
+to something like `[CL BUY THIS NOW] Peavey Classic` or something of that
+nature.
+
+## Why not use Craigslist alerts?
+
+I'm not going to lie -- I didn't know Craigslist alerts existed. Knowing that
+now, I realize that one benefit that you have by using IFTTT is that you have a
+centralized location for all your queries. Additionally, IFTTT will alert you
+whenever something goes wrong with the service/integration.
+
+## Final notes
+
+Leveraging web automation tools like [IFTTT](https://ifttt.com/) is a great way
+to look for deals or to get alerts (weather, movies, etc). Hopefully by
+leveraging these automation tools, I could stop hawking websites during work
+hours and just wait for the deals to come to me rather than the other way
+around.
+
+
