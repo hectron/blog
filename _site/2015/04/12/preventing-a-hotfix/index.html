@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delaying a front-end hotfix &#8211; Hector's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A hot-fix was going to take place for a front-end intranet application until we found a hacky patch.">
+    <meta name="author" content="Hector Rios">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/pixyll.css?201504122350" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Delaying a front-end hotfix">
+    <meta property="og:description" content="Hector's tech blog">
+    <meta property="og:url" content="http://hectron.github.io/2015/04/12/preventing-a-hotfix/">
+    <meta property="og:site_name" content="Hector's Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <nav class="site-nav right">
+        <a href="/blog/about/">About</a>
+<a href="/blog/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Delaying a front-end hotfix</h1>
+  <span class="post-meta">Apr 12, 2015</span><br>
+    
+  <span class="post-meta small">
+  
+    3 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h2 id="tl-dr">TL; DR</h2>
+
+<p>This was done in Chrome by adding a “page” bookmark, and pasted the following
+into the URL of the bookmark:</p>
+
+<p><code>javascript:jQuery('.currency-options').toggle();</code></p>
+
+<p>Whenever the end user would not be able to see the section, they simply click
+the new bookmark and the section would show up.</p>
+
+<hr />
+
+<h2 id="a-little-background">A little background</h2>
+
+<p>There was an error in one of our applications recently. The error involved a
+section in the DOM that was not displaying to the end user (but it <em>was</em> in the
+DOM). </p>
+
+<p>I suspect that this error was the result of hot-fixing every day of our two week
+sprint. Let that sit.</p>
+
+<blockquote>
+  <p>We hot-fixed every day in our two week sprint.</p>
+</blockquote>
+
+<p>The team’s morale was at an all-time low and we decided to bite the bullet and
+just take two days to prep an actual release. During the time we were preparing
+the release, a critical issue came in. Intranet users were unable to see a
+currency box that is critical.</p>
+
+<h2 id="finding-out-the-problem">Finding out the problem</h2>
+
+<p>The very first thing I did was I verified the issue for multiple users. Then I
+inspected the area of the front-end application where the content was missing.</p>
+
+<p>What happened was that there was bad data parsing being done on the app, and a
+callback was never being fired. The callback simply performed a
+<code>jQuery.toggle()</code> with the data that was being parsed.</p>
+
+<p>jQuery specifies that the <code>toggle()</code> method simply <code>Use true to show the element
+or false to hide it.</code> Therefore all we needed to do is somehow call toggle on
+that element whenever a user tried to view it.</p>
+
+<h2 id="sometimes-you-gotta-patch">Sometimes you gotta patch</h2>
+
+<p>Since we were on track to make a release, we had to make a decision. Either
+involve a whole team and schedule a deploy to take place later in the evening,
+avoid fixing the issue (not really an option) or find a work around.</p>
+
+<p>Rather than starting another multi-hour hot-fix that would involve coding a
+solution, updating integration tests to verify the solution, and have a QA team
+perform a regression test, I ended up coding a JavaScript function, saved it as
+a bookmark, and gave the bookmark to the main intranet users.</p>
+
+<h2 id="why-use-the-bookmark-approach">Why use the bookmark approach?</h2>
+
+<p>We were already breaking many rules in proper, ethical, and respectable
+development. Luckily, we <strong>only support the latest version of Google Chrome on
+<em>Mac</em></strong>. Having only to worry about fixing this on one browser was a blessing.</p>
+
+<p>The code I ended up writing was this:</p>
+
+<p><code>javascript:jQuery('.currency-options').toggle();</code></p>
+
+<p>We packaged that up into a bookmark for users to have in their Chrome bookmarks
+toolbar, and before you knew it, all of our users who did not have access to
+those fields were now pleased to be able to check out and edit their values.</p>
+
+<h2 id="final-notes">Final notes</h2>
+
+<p>If you’re reading this blog, then you know that I try to follow standard
+procedures but often have to deviate from them in order to accomplish something. </p>
+
+<p>Unfortunately, we were in a position where we didn’t want to modify production
+code, but wanted to get a temporary fix our as soon as possible. This
+work-around worked just fine and it gave us enough breathing room to make a
+(significant) release.</p>
+
+</article>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

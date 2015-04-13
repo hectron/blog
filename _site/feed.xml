@@ -7,7 +7,92 @@
     <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Using IFTTT to leverage the invisble hand</title>
+        <title>Delaying a front-end hotfix</title>
+        <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
+
+&lt;p&gt;This was done in Chrome by adding a “page” bookmark, and pasted the following
+into the URL of the bookmark:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript:jQuery('.currency-options').toggle();&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Whenever the end user would not be able to see the section, they simply click
+the new bookmark and the section would show up.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-little-background&quot;&gt;A little background&lt;/h2&gt;
+
+&lt;p&gt;There was an error in one of our applications recently. The error involved a
+section in the DOM that was not displaying to the end user (but it &lt;em&gt;was&lt;/em&gt; in the
+DOM). &lt;/p&gt;
+
+&lt;p&gt;I suspect that this error was the result of hot-fixing every day of our two week
+sprint. Let that sit.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We hot-fixed every day in our two week sprint.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The team’s morale was at an all-time low and we decided to bite the bullet and
+just take two days to prep an actual release. During the time we were preparing
+the release, a critical issue came in. Intranet users were unable to see a
+currency box that is critical.&lt;/p&gt;
+
+&lt;h2 id=&quot;finding-out-the-problem&quot;&gt;Finding out the problem&lt;/h2&gt;
+
+&lt;p&gt;The very first thing I did was I verified the issue for multiple users. Then I
+inspected the area of the front-end application where the content was missing.&lt;/p&gt;
+
+&lt;p&gt;What happened was that there was bad data parsing being done on the app, and a
+callback was never being fired. The callback simply performed a
+&lt;code&gt;jQuery.toggle()&lt;/code&gt; with the data that was being parsed.&lt;/p&gt;
+
+&lt;p&gt;jQuery specifies that the &lt;code&gt;toggle()&lt;/code&gt; method simply &lt;code&gt;Use true to show the element
+or false to hide it.&lt;/code&gt; Therefore all we needed to do is somehow call toggle on
+that element whenever a user tried to view it.&lt;/p&gt;
+
+&lt;h2 id=&quot;sometimes-you-gotta-patch&quot;&gt;Sometimes you gotta patch&lt;/h2&gt;
+
+&lt;p&gt;Since we were on track to make a release, we had to make a decision. Either
+involve a whole team and schedule a deploy to take place later in the evening,
+avoid fixing the issue (not really an option) or find a work around.&lt;/p&gt;
+
+&lt;p&gt;Rather than starting another multi-hour hot-fix that would involve coding a
+solution, updating integration tests to verify the solution, and have a QA team
+perform a regression test, I ended up coding a JavaScript function, saved it as
+a bookmark, and gave the bookmark to the main intranet users.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-use-the-bookmark-approach&quot;&gt;Why use the bookmark approach?&lt;/h2&gt;
+
+&lt;p&gt;We were already breaking many rules in proper, ethical, and respectable
+development. Luckily, we &lt;strong&gt;only support the latest version of Google Chrome on
+&lt;em&gt;Mac&lt;/em&gt;&lt;/strong&gt;. Having only to worry about fixing this on one browser was a blessing.&lt;/p&gt;
+
+&lt;p&gt;The code I ended up writing was this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript:jQuery('.currency-options').toggle();&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We packaged that up into a bookmark for users to have in their Chrome bookmarks
+toolbar, and before you knew it, all of our users who did not have access to
+those fields were now pleased to be able to check out and edit their values.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-notes&quot;&gt;Final notes&lt;/h2&gt;
+
+&lt;p&gt;If you’re reading this blog, then you know that I try to follow standard
+procedures but often have to deviate from them in order to accomplish something. &lt;/p&gt;
+
+&lt;p&gt;Unfortunately, we were in a position where we didn’t want to modify production
+code, but wanted to get a temporary fix our as soon as possible. This
+work-around worked just fine and it gave us enough breathing room to make a
+(significant) release.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Apr 2015 21:13:00 +0000</pubDate>
+        <link>http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</link>
+        <guid isPermaLink="true">http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</guid>
+      </item>
+    
+      <item>
+        <title>Using IFTTT to leverage the invisible hand</title>
         <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
 
 &lt;p&gt;You can set up a custom recipe in &lt;a href=&quot;https://ifttt.com&quot;&gt;IFTTT&lt;/a&gt; to alert you
@@ -25,7 +110,7 @@ URL box in the IFTTT, enter in your e-mail, and make the recipe!&lt;/p&gt;
 &lt;h2 id=&quot;a-little-background&quot;&gt;A little background&lt;/h2&gt;
 
 &lt;p&gt;One thing my readers should know is that I’m a stan of music – all variety of
-music. This is likely because I consider myself a hobbiest musician. As a
+music. This is likely because I consider myself a hobbyist musician. As a
 result, I suffer from what other musicians call &lt;strong&gt;GAS&lt;/strong&gt; (not necessarily the
 result of dietary choices). &lt;/p&gt;
 
@@ -46,7 +131,7 @@ needed to have the following:&lt;/p&gt;
   &lt;li&gt;Clean headroom&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In short, I wanted a tube amp that was realible and affordable. I set a budget
+&lt;p&gt;In short, I wanted a tube amp that was reliable and affordable. I set a budget
 of $500 USD and performed research. &lt;/p&gt;
 
 &lt;p&gt;After a few searches, I came to the
