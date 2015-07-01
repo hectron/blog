@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How into Code Review &#8211; Hector's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="So you started code reviewing -- great. Let's make those code reviews effective.">
+    <meta name="author" content="Hector Rios">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://hectron.github.io/blog/2015/07/02/how-into-code-review/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/pixyll.css?201507022239" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How into Code Review">
+    <meta property="og:description" content="Hector's tech blog">
+    <meta property="og:url" content="http://hectron.github.io/2015/07/02/how-into-code-review/">
+    <meta property="og:site_name" content="Hector's Blog">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <nav class="site-nav right">
+        <a href="/blog/about/">About</a>
+<a href="/blog/contact/">Contact</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>How into Code Review</h1>
+  <span class="post-meta">Jul 2, 2015</span><br>
+    
+  <span class="post-meta small">
+  
+    4 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h2 id="tl-dr">TL; DR</h2>
+
+<p>Context is king. Be specific about what your code is doing and <em>why</em>
+it’s the way that it is.</p>
+
+<p>Don’t be a chump when you review someone else’s code. Find what you like
+about the code review and comment on it. Find something you don’t like?
+Question it nicely.</p>
+
+<p>Code reviews are about sharing and learning.</p>
+
+<hr />
+
+<h2 id="a-little-background">A little background</h2>
+
+<p>When I started working at my current job, I was overwhelmed. The
+applications that we had were massive, monolithic applications that were
+designed surprisingly well.</p>
+
+<p>It may have been to due the actual visibility of code online, but I
+started getting concerned about the code that was being merged in. I
+pestered my manager to allow me to pair program or code review with some
+developers, if only for just an hour a week. My manager was all for it,
+but no other developer wanted to pair with me.</p>
+
+<p>After several months of trying, I kept bringing it up to my manager and
+we decided that perhaps we should implement code reviews via Pull
+Requests.</p>
+
+<h2 id="the-theory-of-pull-requests">The theory of Pull Requests</h2>
+
+<p>In theory, pull requests should be a place where intelligent
+conversation is had regarding code that is to be merged. They should be
+reviewed, accepted and merged for the code to actually go out. It should
+have many pairs of eyes looking at it to try to see what consequences it
+will have.</p>
+
+<p>This is all great if you have a team that actively reviews each other’s
+code. The best way to go about implementing a strong code review culture
+is to <strong>lead by example</strong>.</p>
+
+<h2 id="code-reviews-201">Code Reviews 201</h2>
+
+<h3 id="preparing-to-ask-for-a-review">Preparing to ask for a review</h3>
+
+<p>I like to write up my code review request before asking someone to
+review my code. The total write up is about 3-5 paragraphs. The write up
+contains about three sections.</p>
+
+<p>The first section provided is titled “context” in which the context for
+the work is explained. This explains explains the business value of why
+the work was needed.</p>
+
+<p>The next section is titled “cause.” It explains why the previous code
+was doing what it was. If it’s a new feature, explain why the old
+featuers were just not cutting it. This is usually clear by the time the
+code is ready.</p>
+
+<p>The last section is titled “solution.” This is where one <strong>succinctly</strong>
+explains the work done and what it hopes to accomplish.</p>
+
+<h3 id="asking-for-a-code-review">Asking for a code review</h3>
+
+<p>Once the write-up is ready, either copy your code into a code-sharing
+tool like <a href="https://gist.github.com/">Gist</a>,
+<a href="http://jsfiddle.net/">JsFiddle</a>, <a href="https://code.stypi.com/">Stypi</a>, or
+open a pull request. If you’re not going to merge it in, label it as so.</p>
+
+<p>Find a co-worker, colleague, friend, or an online coding website. 
+<strong>Kindly and briefly</strong> ask for a code review if they have time. Provide
+them with the short summary of the code in question, and <em>give them a
+clear date for when you’d expect the code to be reviewed</em>.</p>
+
+<p>The last point is critical: if the code is needed to be reviewed for a
+same-day release, you’ll want to find someone who will take time out of
+their day to help you out.</p>
+
+<h3 id="reviewing-someone-elses-code">Reviewing someone else’s code</h3>
+
+<p>There are three rules I abide by.</p>
+
+<ul>
+  <li>Don’t be a chump.</li>
+  <li>Provide useful, timely feedback.</li>
+  <li>Don’t be a chump.</li>
+</ul>
+
+<p>If someone asked you to review their code, they want it to be critiqued
+and improved. This does not give the code reviewer a pass to be a chump.</p>
+
+<p>The first thing I do is I <strong>really try to</strong> find things about the code
+that I like.  When a code review has some questionable code, simply
+question it. It’s better to improve code by questioning it rather than
+insulting the author.</p>
+
+<p>If you find something that could be better, phrase your findings such
+that they form a question. This will lesson the negativity resulting
+from identifying spotty code.</p>
+
+<p>Be curtious and ask when they expect feedback by. As mentioned above,
+sometimes a review is critical and you might not have time to review it.
+That’s OK. They’ll understand.</p>
+
+<p>Lastly, remember to be positive. The purpose of code reviews is to share
+knowledge and improve the quality of the base code. Work together toward
+that goal and not against each other to prove who can code better.</p>
+
+<h2 id="final-notes">Final notes</h2>
+
+<p>I think code reviews and/or pull requests should be a part of everyone’s
+workflow. Paired with intellgent conversation, they truly improve the
+quality of the code base.</p>
+
+<p>If you ask for a code review, I challenge you to lead by example by:</p>
+
+<ul>
+  <li>Writing at least 3 paragraphs explaining your change.</li>
+  <li>Doing it frequently so that they can be easily reviewed.</li>
+  <li>Be kind when asking for a code review.</li>
+</ul>
+
+<p>If you are a person reviewing someone else’s code, I challenge you to:</p>
+
+<ul>
+  <li>Drop your ego while reviewing code.</li>
+  <li>Be timely and helpful in your reviews.</li>
+  <li>Ask positive questions when you find bad code.</li>
+</ul>
+
+
+</article>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

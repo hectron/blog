@@ -1,10 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hector's Blog</title>
-    <description>Hector's tech blog</description>
+    <title>Hector&#39;s Blog</title>
+    <description>Hector&#39;s tech blog</description>
     <link>http://hectron.github.io/blog/</link>
     <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>How into Code Review</title>
+        <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
+
+&lt;p&gt;Context is king. Be specific about what your code is doing and &lt;em&gt;why&lt;/em&gt;
+it’s the way that it is.&lt;/p&gt;
+
+&lt;p&gt;Don’t be a chump when you review someone else’s code. Find what you like
+about the code review and comment on it. Find something you don’t like?
+Question it nicely.&lt;/p&gt;
+
+&lt;p&gt;Code reviews are about sharing and learning.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-little-background&quot;&gt;A little background&lt;/h2&gt;
+
+&lt;p&gt;When I started working at my current job, I was overwhelmed. The
+applications that we had were massive, monolithic applications that were
+designed surprisingly well.&lt;/p&gt;
+
+&lt;p&gt;It may have been to due the actual visibility of code online, but I
+started getting concerned about the code that was being merged in. I
+pestered my manager to allow me to pair program or code review with some
+developers, if only for just an hour a week. My manager was all for it,
+but no other developer wanted to pair with me.&lt;/p&gt;
+
+&lt;p&gt;After several months of trying, I kept bringing it up to my manager and
+we decided that perhaps we should implement code reviews via Pull
+Requests.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-theory-of-pull-requests&quot;&gt;The theory of Pull Requests&lt;/h2&gt;
+
+&lt;p&gt;In theory, pull requests should be a place where intelligent
+conversation is had regarding code that is to be merged. They should be
+reviewed, accepted and merged for the code to actually go out. It should
+have many pairs of eyes looking at it to try to see what consequences it
+will have.&lt;/p&gt;
+
+&lt;p&gt;This is all great if you have a team that actively reviews each other’s
+code. The best way to go about implementing a strong code review culture
+is to &lt;strong&gt;lead by example&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-reviews-201&quot;&gt;Code Reviews 201&lt;/h2&gt;
+
+&lt;h3 id=&quot;preparing-to-ask-for-a-review&quot;&gt;Preparing to ask for a review&lt;/h3&gt;
+
+&lt;p&gt;I like to write up my code review request before asking someone to
+review my code. The total write up is about 3-5 paragraphs. The write up
+contains about three sections.&lt;/p&gt;
+
+&lt;p&gt;The first section provided is titled “context” in which the context for
+the work is explained. This explains explains the business value of why
+the work was needed.&lt;/p&gt;
+
+&lt;p&gt;The next section is titled “cause.” It explains why the previous code
+was doing what it was. If it’s a new feature, explain why the old
+featuers were just not cutting it. This is usually clear by the time the
+code is ready.&lt;/p&gt;
+
+&lt;p&gt;The last section is titled “solution.” This is where one &lt;strong&gt;succinctly&lt;/strong&gt;
+explains the work done and what it hopes to accomplish.&lt;/p&gt;
+
+&lt;h3 id=&quot;asking-for-a-code-review&quot;&gt;Asking for a code review&lt;/h3&gt;
+
+&lt;p&gt;Once the write-up is ready, either copy your code into a code-sharing
+tool like &lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;,
+&lt;a href=&quot;http://jsfiddle.net/&quot;&gt;JsFiddle&lt;/a&gt;, &lt;a href=&quot;https://code.stypi.com/&quot;&gt;Stypi&lt;/a&gt;, or
+open a pull request. If you’re not going to merge it in, label it as so.&lt;/p&gt;
+
+&lt;p&gt;Find a co-worker, colleague, friend, or an online coding website. 
+&lt;strong&gt;Kindly and briefly&lt;/strong&gt; ask for a code review if they have time. Provide
+them with the short summary of the code in question, and &lt;em&gt;give them a
+clear date for when you’d expect the code to be reviewed&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The last point is critical: if the code is needed to be reviewed for a
+same-day release, you’ll want to find someone who will take time out of
+their day to help you out.&lt;/p&gt;
+
+&lt;h3 id=&quot;reviewing-someone-elses-code&quot;&gt;Reviewing someone else’s code&lt;/h3&gt;
+
+&lt;p&gt;There are three rules I abide by.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t be a chump.&lt;/li&gt;
+  &lt;li&gt;Provide useful, timely feedback.&lt;/li&gt;
+  &lt;li&gt;Don’t be a chump.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If someone asked you to review their code, they want it to be critiqued
+and improved. This does not give the code reviewer a pass to be a chump.&lt;/p&gt;
+
+&lt;p&gt;The first thing I do is I &lt;strong&gt;really try to&lt;/strong&gt; find things about the code
+that I like.  When a code review has some questionable code, simply
+question it. It’s better to improve code by questioning it rather than
+insulting the author.&lt;/p&gt;
+
+&lt;p&gt;If you find something that could be better, phrase your findings such
+that they form a question. This will lesson the negativity resulting
+from identifying spotty code.&lt;/p&gt;
+
+&lt;p&gt;Be curtious and ask when they expect feedback by. As mentioned above,
+sometimes a review is critical and you might not have time to review it.
+That’s OK. They’ll understand.&lt;/p&gt;
+
+&lt;p&gt;Lastly, remember to be positive. The purpose of code reviews is to share
+knowledge and improve the quality of the base code. Work together toward
+that goal and not against each other to prove who can code better.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-notes&quot;&gt;Final notes&lt;/h2&gt;
+
+&lt;p&gt;I think code reviews and/or pull requests should be a part of everyone’s
+workflow. Paired with intellgent conversation, they truly improve the
+quality of the code base.&lt;/p&gt;
+
+&lt;p&gt;If you ask for a code review, I challenge you to lead by example by:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Writing at least 3 paragraphs explaining your change.&lt;/li&gt;
+  &lt;li&gt;Doing it frequently so that they can be easily reviewed.&lt;/li&gt;
+  &lt;li&gt;Be kind when asking for a code review.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are a person reviewing someone else’s code, I challenge you to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Drop your ego while reviewing code.&lt;/li&gt;
+  &lt;li&gt;Be timely and helpful in your reviews.&lt;/li&gt;
+  &lt;li&gt;Ask positive questions when you find bad code.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 02 Jul 2015 07:00:00 -0500</pubDate>
+        <link>http://hectron.github.io/blog/2015/07/02/how-into-code-review/</link>
+        <guid isPermaLink="true">http://hectron.github.io/blog/2015/07/02/how-into-code-review/</guid>
+      </item>
     
       <item>
         <title>Delaying a front-end hotfix</title>
@@ -13,7 +150,7 @@
 &lt;p&gt;This was done in Chrome by adding a “page” bookmark, and pasted the following
 into the URL of the bookmark:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript:jQuery('.currency-options').toggle();&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;javascript:jQuery(&#39;.currency-options&#39;).toggle();&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Whenever the end user would not be able to see the section, they simply click
 the new bookmark and the section would show up.&lt;/p&gt;
@@ -70,7 +207,7 @@ development. Luckily, we &lt;strong&gt;only support the latest version of Google
 
 &lt;p&gt;The code I ended up writing was this:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript:jQuery('.currency-options').toggle();&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;javascript:jQuery(&#39;.currency-options&#39;).toggle();&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;We packaged that up into a bookmark for users to have in their Chrome bookmarks
 toolbar, and before you knew it, all of our users who did not have access to
@@ -86,7 +223,7 @@ code, but wanted to get a temporary fix our as soon as possible. This
 work-around worked just fine and it gave us enough breathing room to make a
 (significant) release.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 12 Apr 2015 21:13:00 +0000</pubDate>
+        <pubDate>Sun, 12 Apr 2015 16:13:00 -0500</pubDate>
         <link>http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</link>
         <guid isPermaLink="true">http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</guid>
       </item>
@@ -186,7 +323,7 @@ hours and just wait for the deals to come to me rather than the other way
 around.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 28 Mar 2015 12:00:00 +0000</pubDate>
+        <pubDate>Sat, 28 Mar 2015 07:00:00 -0500</pubDate>
         <link>http://hectron.github.io/blog/2015/03/28/ifttt/</link>
         <guid isPermaLink="true">http://hectron.github.io/blog/2015/03/28/ifttt/</guid>
       </item>
@@ -282,7 +419,7 @@ changes so that they are all unstaged. You then strategically stage them
 and commit them. This way, your git history is logical.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 22 Feb 2015 12:00:00 +0000</pubDate>
+        <pubDate>Sun, 22 Feb 2015 06:00:00 -0600</pubDate>
         <link>http://hectron.github.io/blog/2015/02/22/rewriting-git-history/</link>
         <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/22/rewriting-git-history/</guid>
       </item>
@@ -368,7 +505,7 @@ doing any text editing.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://lifehacker.com/&quot;&gt;LifeHacker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 15 Feb 2015 12:00:00 +0000</pubDate>
+        <pubDate>Sun, 15 Feb 2015 06:00:00 -0600</pubDate>
         <link>http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</link>
         <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</guid>
       </item>
@@ -441,7 +578,7 @@ unafraid of the terminal).&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/johnotander/pixyll&quot;&gt;Pixyll theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 07 Feb 2015 16:47:00 +0000</pubDate>
+        <pubDate>Sat, 07 Feb 2015 10:47:00 -0600</pubDate>
         <link>http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</link>
         <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</guid>
       </item>
