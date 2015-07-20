@@ -35,7 +35,7 @@ community. Sometimes what benefits us most is counterintuitive. For
 example, it might be taking time off or exercising.
 
 Notice that beneficial actions are subject to time constraints. This is
-why it's __vital__ to prioritize your time. Simple of todo lists can not
+why it's __vital__ to prioritize your time. Simple todo lists can not
 be done unless there's some form of time management.
 
 In the programming world, time management helps you __focus__. If you
@@ -46,7 +46,7 @@ into smaller portions, cognitive load is reduced.
 
 ## Branching away
 
-Doing to much of the same thing will make you better at it, but it also
+Doing too much of the same thing will make you better at it, but it also
 limits you. A friend of mine recently told me about a couple of people
 in grad school who made a poster that read: "I went to journalism school
 and all I got was illiteracy." Doing too much of one thing can cause
@@ -63,7 +63,7 @@ practice it in small steps. [Practice
 it](http://en.wikipedia.org/wiki/Distributed_Practice) to better learn.
 
 **Expect to fail a few times and learn from your mistakes. That's where
-the growth is.** It's also important to social with other people. This
+the growth is.** It's also important to socialize with other people. This
 is one of the most effective ways to get your mind off of work. It also
 gives you another person's insight.
 
