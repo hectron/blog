@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://hectron.github.io/blog/2015/11/08/open-source-contribution/</loc>
+    <lastmod>2015-11-08T06:00:00-06:00</lastmod>
+  </url>
+  <url>
     <loc>http://hectron.github.io/blog/2015/07/02/igniting-your-passion-again/</loc>
     <lastmod>2015-07-02T07:00:00-05:00</lastmod>
   </url>
@@ -30,18 +34,18 @@
   </url>
   <url>
     <loc>http://hectron.github.io/blog/404.html</loc>
-    <lastmod>2015-07-20T11:23:45-05:00</lastmod>
+    <lastmod>2015-11-08T21:38:00-06:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/about/</loc>
-    <lastmod>2015-07-20T11:23:45-05:00</lastmod>
+    <lastmod>2015-11-08T21:38:00-06:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/contact/</loc>
-    <lastmod>2015-07-20T11:23:45-05:00</lastmod>
+    <lastmod>2015-11-08T21:38:00-06:00</lastmod>
   </url>
   <url>
     <loc>http://hectron.github.io/blog/</loc>
-    <lastmod>2015-07-20T11:23:45-05:00</lastmod>
+    <lastmod>2015-11-08T21:38:00-06:00</lastmod>
   </url>
 </urlset>
