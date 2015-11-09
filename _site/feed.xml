@@ -7,6 +7,161 @@
     <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Giving back to the community</title>
+        <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
+
+&lt;p&gt;Be the person you need. Summarize and help those who need help. Try to
+help with work that you’re interested in. Don’t be intimidated to help;
+someone has to help, and you don’t need to be an expert to teach. The
+sooner you do something, the faster that you can learn.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;At the start of my career, I felt like an imposter. I worked at
+companies that used CMS’s such as &lt;a href=&quot;http://umbraco.com/&quot;&gt;Umbraco&lt;/a&gt;,
+&lt;a href=&quot;https://products.office.com/en-US/sharepoint&quot;&gt;Sharepoint&lt;/a&gt;, and
+&lt;a href=&quot;https://www.drupal.org/&quot;&gt;Drupal&lt;/a&gt; but hardly ever had to do any real
+customizations. Whenever I did do complex work, I had a mentor to guide
+me. The imposter syndrome only got worst as the client requests got more
+and more complicated.&lt;/p&gt;
+
+&lt;p&gt;I do not think that I’ve emphasized this enough.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Whenever I did any complex work, I had a mentor to guide me.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Someone more experienced than me was willing to answer my questions. I
+had to learn how to phrase my questions just right so that he can help
+me. I think that the importance of helping out in the community is
+overlooked; we live in a world where there is more data than we can hope
+to parse. Although technology is getting better at providing contextual
+data, I believe that having a person explain a topic is more valuable
+than having an algorithm provide hyperinformed suggestions.&lt;/p&gt;
+
+&lt;p&gt;Once this became apparant, I decided to volunteer more around the
+community. This led me to think of a few different ways of helping out.
+The following are a few that I came up with:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#participating-in-open-source-projects&quot;&gt;Participate in open source
+projects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#participating-in-hackathons&quot;&gt;Participate in hackathons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#participating-in-local-meetups&quot;&gt;Participate in local meetups&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#participating-in-mentoring-programs&quot;&gt;Participate in mentoring
+programs&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The last three months, I’ve been doing these things and a few more.&lt;/p&gt;
+
+&lt;h2 id=&quot;participating-in-open-source-projects&quot;&gt;Participating in open source projects&lt;/h2&gt;
+
+&lt;p&gt;It is important to call this out at once: contributing to an open source
+project &lt;strong&gt;does not mean that you need to write any code.&lt;/strong&gt; There are so
+&lt;a href=&quot;https://github.com/explore&quot;&gt;many out there&lt;/a&gt;, many of which might just
+need some better documentation, testing or just code reviewing.
+Beginners are often intimidated by complex open source projects, but
+they do not need to be. Asking to see how one can be a part of the
+project is often the best way to start.&lt;/p&gt;
+
+&lt;p&gt;In July, I became a team lead on an open source project called &lt;a href=&quot;https://github.com/NorthBridge/alliance-community&quot;&gt;Alliance
+Community&lt;/a&gt;. It’s been
+a lot of fun and was even made Scrum Master (they use the term Coach).
+It started because I wanted to help out doing code reviews, and
+ultimately ended up restructuring the entire application. It’s important
+to note that my beginnings at &lt;a href=&quot;https://github.com/NorthBridge/alliance-community/&quot;&gt;Alliance
+Community&lt;/a&gt; seem
+rather small; I started small and gained responsibities as time passed
+by.&lt;/p&gt;
+
+&lt;p&gt;This is important.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I started small and gained responsibilities as time passed by.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;participating-in-hackathons&quot;&gt;Participating in hackathons&lt;/h2&gt;
+
+&lt;p&gt;Aside from trying to find a project online, you can also participate in
+hackathons. This is a great way to learn and give back; you get to work
+on something small that has potential to grow really big. You’re also
+able to work with individuals that have very diverse backgrounds.&lt;/p&gt;
+
+&lt;p&gt;In October, I participated in a Hackathon called &lt;a href=&quot;https://shehackschi.splashthat.com/&quot;&gt;She Hacks
+Chi&lt;/a&gt;. It
+was aimed at mostly female developers trying to get young girls into
+Science, Technology, Engineering and Mathematics (STEM). I participated
+by becoming a mentor for the hackathon. The team I mentored ended up
+winning an award for appealing to the most young girls.&lt;/p&gt;
+
+&lt;p&gt;Helping out in Hackathons is a great way to share your knowledge and
+learn something new. They are very focused and everyone at the hackathon
+is there for similar reasons.&lt;/p&gt;
+
+&lt;h2 id=&quot;participating-in-local-meetups&quot;&gt;Participating in local meetups&lt;/h2&gt;
+
+&lt;p&gt;Giving back can be done through your local meetups. It is important to
+note that you should share whatever knowledge you find valuable. When I
+was a beginner, it was very difficult for me to find what to share
+because I felt that everyone either (a) was too advanced for my
+contributions or (b) my contributions were not applicable to anyone.
+Regardless of what skill level you’re at, &lt;strong&gt;share the knowledge&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In September, I gave a &lt;a href=&quot;http://www.chicagoruby.org/videos/archives/2015/09/01/chicagoruby-downtown-lightening-talks/&quot;&gt;lightning talk at Chicago
+Ruby&lt;/a&gt;
+about programming for the internet of things using Ruby. Ruby is not
+usually the first langauge that people consider for the Internet of
+Things but I provided two use cases in which you can use Ruby to perform
+these things. In the process of preparing the lightning talk, I ended up
+&lt;a href=&quot;https://github.com/hybridgroup/artoo-spark/pull/5&quot;&gt;fixing the Artoo Ruby
+gem&lt;/a&gt; and made my
+first unintended open source contribution.&lt;/p&gt;
+
+&lt;p&gt;Going to local meetups will benefit you in a sense that whatever you
+share, it will be rock solid; you will likely do research and try to
+think of your nugget of information as something that can help many
+people. This will allow you to get a better understanding of what you’re
+doing and where you’re going. The best part of it is that you will
+educate people around you.&lt;/p&gt;
+
+&lt;p&gt;Another helpful thing about local meetups is that you get to see what is
+currently being done in the industry. You will learn what new
+technologies or paradigms are out there, and how they are actively being
+developed.&lt;/p&gt;
+
+&lt;h2 id=&quot;participating-in-mentoring&quot;&gt;Participating in mentoring&lt;/h2&gt;
+
+&lt;p&gt;Another way to contribute to the community is to mentor someone. It can
+be a friend, a co-worker or a stranger. Find a local meetup and offer to
+start a mentoring program that is a few months long.&lt;/p&gt;
+
+&lt;p&gt;As of mid-October, I have been mentoring two exceptional developers in
+Web Development using Python. I was able to find them by going to
+Chicago’s Python user group (&lt;a href=&quot;chipy.org&quot;&gt;Chipy&lt;/a&gt;). The program is meant
+to teach an individual how to do some web development from the ground
+up.&lt;/p&gt;
+
+&lt;p&gt;There are other groups that are looking for experienced developers to
+mentor the youth. The best way to find these types of groups is to go to
+a meetup group and find out how you can help. It doesn’t hurt to ask.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-notes&quot;&gt;Final notes&lt;/h2&gt;
+
+&lt;p&gt;There are many ways to contribute to the community. Other people will
+learn and will teach you new things. You don’t need to be an expert to
+teach people. Some people are known for thinking that the best way to
+learn is to teach.&lt;/p&gt;
+
+&lt;p&gt;Go out there and make a difference. Help out the people who were in your
+shoes when you were getting started. If you’re a beginner, voice your
+thoughts and ideas. You’ll impress people and get valuable feedback.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Nov 2015 06:00:00 -0600</pubDate>
+        <link>http://hectron.github.io/blog/2015/11/08/open-source-contribution/</link>
+        <guid isPermaLink="true">http://hectron.github.io/blog/2015/11/08/open-source-contribution/</guid>
+      </item>
+    
+      <item>
         <title>Ignite your passion again</title>
         <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
 

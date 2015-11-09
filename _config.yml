@@ -6,6 +6,12 @@ description: "Hector's tech blog"
 baseurl:     "/blog"
 url:         "http://hectron.github.io"
 
+# Server configuration stuff
+# These settings are for a Vagrant machine which is bound to port 8080
+port: 8080
+host: 0.0.0.0
+
+
 # Google analytics
 google_analytics:
 
