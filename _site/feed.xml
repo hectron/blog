@@ -37,9 +37,9 @@ me. I think that the importance of helping out in the community is
 overlooked; we live in a world where there is more data than we can hope
 to parse. Although technology is getting better at providing contextual
 data, I believe that having a person explain a topic is more valuable
-than having an algorithm provide hyperinformed suggestions.&lt;/p&gt;
+than having an algorithm provide hyper informed suggestions.&lt;/p&gt;
 
-&lt;p&gt;Once this became apparant, I decided to volunteer more around the
+&lt;p&gt;Once this became apparent, I decided to volunteer more around the
 community. This led me to think of a few different ways of helping out.
 The following are a few that I came up with:&lt;/p&gt;
 
@@ -71,7 +71,7 @@ It started because I wanted to help out doing code reviews, and
 ultimately ended up restructuring the entire application. It’s important
 to note that my beginnings at &lt;a href=&quot;https://github.com/NorthBridge/alliance-community/&quot;&gt;Alliance
 Community&lt;/a&gt; seem
-rather small; I started small and gained responsibities as time passed
+rather small; I started small and gained responsibility as time passed
 by.&lt;/p&gt;
 
 &lt;p&gt;This is important.&lt;/p&gt;
@@ -110,7 +110,7 @@ Regardless of what skill level you’re at, &lt;strong&gt;share the knowledge&lt
 &lt;p&gt;In September, I gave a &lt;a href=&quot;http://www.chicagoruby.org/videos/archives/2015/09/01/chicagoruby-downtown-lightening-talks/&quot;&gt;lightning talk at Chicago
 Ruby&lt;/a&gt;
 about programming for the internet of things using Ruby. Ruby is not
-usually the first langauge that people consider for the Internet of
+usually the first language that people consider for the Internet of
 Things but I provided two use cases in which you can use Ruby to perform
 these things. In the process of preparing the lightning talk, I ended up
 &lt;a href=&quot;https://github.com/hybridgroup/artoo-spark/pull/5&quot;&gt;fixing the Artoo Ruby

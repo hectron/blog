@@ -32,9 +32,9 @@ me. I think that the importance of helping out in the community is
 overlooked; we live in a world where there is more data than we can hope
 to parse. Although technology is getting better at providing contextual
 data, I believe that having a person explain a topic is more valuable
-than having an algorithm provide hyperinformed suggestions.
+than having an algorithm provide hyper informed suggestions.
 
-Once this became apparant, I decided to volunteer more around the
+Once this became apparent, I decided to volunteer more around the
 community. This led me to think of a few different ways of helping out.
 The following are a few that I came up with:
 
@@ -64,7 +64,7 @@ It started because I wanted to help out doing code reviews, and
 ultimately ended up restructuring the entire application. It's important
 to note that my beginnings at [Alliance
 Community](https://github.com/NorthBridge/alliance-community/) seem
-rather small; I started small and gained responsibities as time passed
+rather small; I started small and gained responsibility as time passed
 by.
 
 This is important.
@@ -101,7 +101,7 @@ Regardless of what skill level you're at, **share the knowledge**.
 In September, I gave a [lightning talk at Chicago
 Ruby](http://www.chicagoruby.org/videos/archives/2015/09/01/chicagoruby-downtown-lightening-talks/)
 about programming for the internet of things using Ruby. Ruby is not
-usually the first langauge that people consider for the Internet of
+usually the first language that people consider for the Internet of
 Things but I provided two use cases in which you can use Ruby to perform
 these things. In the process of preparing the lightning talk, I ended up
 [fixing the Artoo Ruby
