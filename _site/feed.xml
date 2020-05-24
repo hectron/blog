@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hector&#39;s Blog</title>
-    <description>Hector&#39;s tech blog</description>
-    <link>http://hectron.github.io/blog/</link>
-    <atom:link href="http://hectron.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Hector's Blog</title>
+    <description>Hector's tech blog</description>
+    <link>http://localhost:8080/</link>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Giving back to the community</title>
@@ -157,8 +157,8 @@ shoes when you were getting started. If you’re a beginner, voice your
 thoughts and ideas. You’ll impress people and get valuable feedback.&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Nov 2015 06:00:00 -0600</pubDate>
-        <link>http://hectron.github.io/blog/2015/11/08/open-source-contribution/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/11/08/open-source-contribution/</guid>
+        <link>http://localhost:8080/2015/11/08/open-source-contribution/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/11/08/open-source-contribution/</guid>
       </item>
     
       <item>
@@ -197,7 +197,7 @@ why it’s &lt;strong&gt;vital&lt;/strong&gt; to prioritize your time. Simple to
 be done unless there’s some form of time management.&lt;/p&gt;
 
 &lt;p&gt;In the programming world, time management helps you &lt;strong&gt;focus&lt;/strong&gt;. If you
-know that you only have &lt;code&gt;X&lt;/code&gt; amount of time to do something, that has
+know that you only have &lt;code class=&quot;highlighter-rouge&quot;&gt;X&lt;/code&gt; amount of time to do something, that has
 many cognitive effects. This is why in scrum it’s important to break up
 your stories into smaller stories if possible. By breaking up priorities
 into smaller portions, cognitive load is reduced.&lt;/p&gt;
@@ -275,8 +275,8 @@ definitely reflect this state of well being.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 02 Jul 2015 07:00:00 -0500</pubDate>
-        <link>http://hectron.github.io/blog/2015/07/02/igniting-your-passion-again/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/07/02/igniting-your-passion-again/</guid>
+        <link>http://localhost:8080/2015/07/02/igniting-your-passion-again/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/07/02/igniting-your-passion-again/</guid>
       </item>
     
       <item>
@@ -412,8 +412,8 @@ quality of the code base.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 02 Jul 2015 07:00:00 -0500</pubDate>
-        <link>http://hectron.github.io/blog/2015/07/02/how-into-code-review/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/07/02/how-into-code-review/</guid>
+        <link>http://localhost:8080/2015/07/02/how-into-code-review/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/07/02/how-into-code-review/</guid>
       </item>
     
       <item>
@@ -423,7 +423,7 @@ quality of the code base.&lt;/p&gt;
 &lt;p&gt;This was done in Chrome by adding a “page” bookmark, and pasted the following
 into the URL of the bookmark:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript:jQuery(&#39;.currency-options&#39;).toggle();&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;javascript:jQuery('.currency-options').toggle();&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Whenever the end user would not be able to see the section, they simply click
 the new bookmark and the section would show up.&lt;/p&gt;
@@ -434,7 +434,7 @@ the new bookmark and the section would show up.&lt;/p&gt;
 
 &lt;p&gt;There was an error in one of our applications recently. The error involved a
 section in the DOM that was not displaying to the end user (but it &lt;em&gt;was&lt;/em&gt; in the
-DOM). &lt;/p&gt;
+DOM).&lt;/p&gt;
 
 &lt;p&gt;I suspect that this error was the result of hot-fixing every day of our two week
 sprint. Let that sit.&lt;/p&gt;
@@ -455,9 +455,9 @@ inspected the area of the front-end application where the content was missing.&l
 
 &lt;p&gt;What happened was that there was bad data parsing being done on the app, and a
 callback was never being fired. The callback simply performed a
-&lt;code&gt;jQuery.toggle()&lt;/code&gt; with the data that was being parsed.&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;jQuery.toggle()&lt;/code&gt; with the data that was being parsed.&lt;/p&gt;
 
-&lt;p&gt;jQuery specifies that the &lt;code&gt;toggle()&lt;/code&gt; method simply &lt;code&gt;Use true to show the element
+&lt;p&gt;jQuery specifies that the &lt;code class=&quot;highlighter-rouge&quot;&gt;toggle()&lt;/code&gt; method simply &lt;code class=&quot;highlighter-rouge&quot;&gt;Use true to show the element
 or false to hide it.&lt;/code&gt; Therefore all we needed to do is somehow call toggle on
 that element whenever a user tried to view it.&lt;/p&gt;
 
@@ -480,7 +480,7 @@ development. Luckily, we &lt;strong&gt;only support the latest version of Google
 
 &lt;p&gt;The code I ended up writing was this:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript:jQuery(&#39;.currency-options&#39;).toggle();&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;javascript:jQuery('.currency-options').toggle();&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;We packaged that up into a bookmark for users to have in their Chrome bookmarks
 toolbar, and before you knew it, all of our users who did not have access to
@@ -489,7 +489,7 @@ those fields were now pleased to be able to check out and edit their values.&lt;
 &lt;h2 id=&quot;final-notes&quot;&gt;Final notes&lt;/h2&gt;
 
 &lt;p&gt;If you’re reading this blog, then you know that I try to follow standard
-procedures but often have to deviate from them in order to accomplish something. &lt;/p&gt;
+procedures but often have to deviate from them in order to accomplish something.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, we were in a position where we didn’t want to modify production
 code, but wanted to get a temporary fix our as soon as possible. This
@@ -497,8 +497,8 @@ work-around worked just fine and it gave us enough breathing room to make a
 (significant) release.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Apr 2015 16:13:00 -0500</pubDate>
-        <link>http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</guid>
+        <link>http://localhost:8080/2015/04/12/preventing-a-hotfix/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/04/12/preventing-a-hotfix/</guid>
       </item>
     
       <item>
@@ -506,7 +506,7 @@ work-around worked just fine and it gave us enough breathing room to make a
         <description>&lt;h2 id=&quot;tl-dr&quot;&gt;TL; DR&lt;/h2&gt;
 
 &lt;p&gt;You can set up a custom recipe in &lt;a href=&quot;https://ifttt.com&quot;&gt;IFTTT&lt;/a&gt; to alert you
-whenever a new listing is available on &lt;a href=&quot;http://craigslist.org/&quot;&gt;Craigslist&lt;/a&gt;. &lt;/p&gt;
+whenever a new listing is available on &lt;a href=&quot;http://craigslist.org/&quot;&gt;Craigslist&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Keep &lt;a href=&quot;https://ifttt.com/recipes/229-send-yourself-emails-for-new-craigslist-postings-from-any-search-you-re-interested-in&quot;&gt;this website loaded in the
 background&lt;/a&gt;.&lt;/p&gt;
@@ -522,7 +522,7 @@ URL box in the IFTTT, enter in your e-mail, and make the recipe!&lt;/p&gt;
 &lt;p&gt;One thing my readers should know is that I’m a stan of music – all variety of
 music. This is likely because I consider myself a hobbyist musician. As a
 result, I suffer from what other musicians call &lt;strong&gt;GAS&lt;/strong&gt; (not necessarily the
-result of dietary choices). &lt;/p&gt;
+result of dietary choices).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GAS&lt;/strong&gt; is known in the musician’s community as
 &lt;strong&gt;Gear Acquisition Syndrome&lt;/strong&gt;; &lt;strong&gt;GAS&lt;/strong&gt; means that you love collection gear.&lt;/p&gt;
@@ -542,7 +542,7 @@ needed to have the following:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In short, I wanted a tube amp that was reliable and affordable. I set a budget
-of $500 USD and performed research. &lt;/p&gt;
+of $500 USD and performed research.&lt;/p&gt;
 
 &lt;p&gt;After a few searches, I came to the
 conclusion that a &lt;a href=&quot;http://www.fender.com/guitar-amplifiers/vintage-pro-tube/blues-deluxe-reissue/product-223220.html&quot;&gt;Fender Blues
@@ -566,18 +566,18 @@ changes&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The first thing I did was perform the search query that I needed. After that, I
 copied the URL from the search result and pasted it into the Craiglist box
-within the recipe page. &lt;/p&gt;
+within the recipe page.&lt;/p&gt;
 
 &lt;p&gt;I then entered an e-mail address and saved the recipe. After it was saved, I
 went into My Recipes and ended up modifying it. I changed the subject of the 
-e-mail to be &lt;code&gt;[CL Deal] Peavey Classic&lt;/code&gt;.&lt;/p&gt;
+e-mail to be &lt;code class=&quot;highlighter-rouge&quot;&gt;[CL Deal] Peavey Classic&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;However, if you’re reading this blog, then you know I’m a bit more… unique
 than the average internet user. Therefore, I ended up creating three different
 alerts. Each one using the same term, but with a different maximum price.&lt;/p&gt;
 
 &lt;p&gt;This allowed me to change the subject of the e-mail that will be sent to myself
-to something like &lt;code&gt;[CL BUY THIS NOW] Peavey Classic&lt;/code&gt; or something of that
+to something like &lt;code class=&quot;highlighter-rouge&quot;&gt;[CL BUY THIS NOW] Peavey Classic&lt;/code&gt; or something of that
 nature.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-not-use-craigslist-alerts&quot;&gt;Why not use Craigslist alerts?&lt;/h2&gt;
@@ -597,8 +597,8 @@ around.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 Mar 2015 07:00:00 -0500</pubDate>
-        <link>http://hectron.github.io/blog/2015/03/28/ifttt/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/03/28/ifttt/</guid>
+        <link>http://localhost:8080/2015/03/28/ifttt/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/03/28/ifttt/</guid>
       </item>
     
       <item>
@@ -608,9 +608,9 @@ around.&lt;/p&gt;
 &lt;p&gt;You can appear like a competent programmer by rewriting your commit
 history with the following commands:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;git reset HEAD~n&lt;/code&gt; where n is the number of prior commits.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git reset HEAD~n&lt;/code&gt; where n is the number of prior commits.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;git add --patch&lt;/code&gt; to select the changes you want to include in a commit.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add --patch&lt;/code&gt; to select the changes you want to include in a commit.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -644,11 +644,11 @@ own commit.&lt;/p&gt;
 
 &lt;p&gt;Here is what my original commit looked like:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;commit 23106d0d38bd5a774d61f4632839d6fb61f20c66 Author: Hector Rios
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;commit 23106d0d38bd5a774d61f4632839d6fb61f20c66 Author: Hector Rios
 &amp;lt;my@email.com&amp;gt; Date:   Fri Feb 13 15:26:22 2015 -0600
 
     Updated my Contact page.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;breaking-the-bad&quot;&gt;Breaking (the) bad&lt;/h2&gt;
 
@@ -656,13 +656,13 @@ own commit.&lt;/p&gt;
 that we can split them up into individual commits. To do this, do the
 following:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;git reset HEAD^&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git reset HEAD^&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;This will go back one commit and unstage your commit’s changes. So now,
-you want to run the command &lt;code&gt;git add --patch&lt;/code&gt;. This will bring an
+you want to run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git add --patch&lt;/code&gt;. This will bring an
 interactive prompt in which you can select whether or not to stage that
 change. In our case, we want to include only the changes we made to the
-&lt;code&gt;*.html&lt;/code&gt; file.&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;*.html&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;p&gt;Once we selected all the changes, we commit that change, and move on to
 the next file. When we do this to our stylesheets and javascript files,
@@ -677,10 +677,10 @@ that instead now.&lt;/p&gt;
 need to undo all three commits. I personally squash the commits and then
 repeat the trick above. So the commands look like:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;git rebase -i HEAD~3 (Then squash them into one commit) 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase -i HEAD~3 (Then squash them into one commit) 
 git reset HEAD^ 
 git add --patch (select the chunks that relate to your feature)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This way you can combine the changes per feature and commit them
 individually.&lt;/p&gt;
@@ -693,8 +693,8 @@ and commit them. This way, your git history is logical.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 22 Feb 2015 06:00:00 -0600</pubDate>
-        <link>http://hectron.github.io/blog/2015/02/22/rewriting-git-history/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/22/rewriting-git-history/</guid>
+        <link>http://localhost:8080/2015/02/22/rewriting-git-history/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/02/22/rewriting-git-history/</guid>
       </item>
     
       <item>
@@ -710,7 +710,7 @@ a flaw. Without a fast connection, Nitrious might not be very accessible.&lt;/p&
 &lt;p&gt;Technologists are familiar with &lt;a href=&quot;http://en.wikipedia.org/wiki/Moore%27s_law&quot;&gt;Moore’s
 Law&lt;/a&gt; which states that the number of
 transistors doubles every two years. In turn, this affects our computeres and
-phones by allowing us to have more processing power. &lt;/p&gt;
+phones by allowing us to have more processing power.&lt;/p&gt;
 
 &lt;p&gt;But what happens when your processing power is so efficient that each hardware
 upgrade is less enticing?&lt;/p&gt;
@@ -724,7 +724,7 @@ machines for doing development on Linux environments.&lt;/p&gt;
 
 &lt;p&gt;My desktop is a custom built gaming computer that is seriously over-powered and
 ridiculously underused; I don’t really consume much media on my computer except
-for light video watching on Netflix. &lt;/p&gt;
+for light video watching on Netflix.&lt;/p&gt;
 
 &lt;p&gt;Most of my media is stored in &lt;a href=&quot;https://dropbox.com/&quot;&gt;the cloud&lt;/a&gt;,
 &lt;a href=&quot;https://www.github.com/&quot;&gt;GitHub&lt;/a&gt; or in a &lt;a href=&quot;http://www.newegg.com/Product/Product.aspx?Item=N82E16822236519&quot;&gt;2 TB Western Digital Hard
@@ -743,7 +743,7 @@ Drive&lt;/a&gt;.&lt;/p&gt;
 how to make use of many cloud services in creative ways. Seeing as how it’s
 increasingly difficult to not be connected in online services, I decided to
 &lt;strong&gt;endure&lt;/strong&gt; the cloud and try out &lt;a href=&quot;https://nitrous.io/&quot;&gt;Nitrous.IO&lt;/a&gt; to do my web
-development from an online IDE. &lt;/p&gt;
+development from an online IDE.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-things-it-does-good&quot;&gt;The things it does good&lt;/h2&gt;
 
@@ -779,8 +779,8 @@ doing any text editing.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 15 Feb 2015 06:00:00 -0600</pubDate>
-        <link>http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</guid>
+        <link>http://localhost:8080/2015/02/15/using-nitrous-io/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/02/15/using-nitrous-io/</guid>
       </item>
     
       <item>
@@ -852,8 +852,8 @@ unafraid of the terminal).&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 07 Feb 2015 10:47:00 -0600</pubDate>
-        <link>http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</link>
-        <guid isPermaLink="true">http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</guid>
+        <link>http://localhost:8080/2015/02/07/setting-up-a-blog/</link>
+        <guid isPermaLink="true">http://localhost:8080/2015/02/07/setting-up-a-blog/</guid>
       </item>
     
   </channel>

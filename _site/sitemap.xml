@@ -1,51 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://hectron.github.io/blog/2015/11/08/open-source-contribution/</loc>
-    <lastmod>2015-11-08T06:00:00-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/07/02/igniting-your-passion-again/</loc>
-    <lastmod>2015-07-02T07:00:00-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/07/02/how-into-code-review/</loc>
-    <lastmod>2015-07-02T07:00:00-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/</loc>
-    <lastmod>2015-04-12T16:13:00-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/03/28/ifttt/</loc>
-    <lastmod>2015-03-28T07:00:00-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/02/22/rewriting-git-history/</loc>
-    <lastmod>2015-02-22T06:00:00-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/02/15/using-nitrous-io/</loc>
-    <lastmod>2015-02-15T06:00:00-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/2015/02/07/setting-up-a-blog/</loc>
-    <lastmod>2015-02-07T10:47:00-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/404.html</loc>
-    <lastmod>2015-11-09T22:03:12-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/about/</loc>
-    <lastmod>2015-11-09T22:03:12-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/contact/</loc>
-    <lastmod>2015-11-09T22:03:12-06:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hectron.github.io/blog/</loc>
-    <lastmod>2015-11-09T22:03:12-06:00</lastmod>
-  </url>
+<url>
+<loc>http://localhost:8080/2015/02/07/setting-up-a-blog/</loc>
+<lastmod>2015-02-07T10:47:00-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/02/15/using-nitrous-io/</loc>
+<lastmod>2015-02-15T06:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/02/22/rewriting-git-history/</loc>
+<lastmod>2015-02-22T06:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/03/28/ifttt/</loc>
+<lastmod>2015-03-28T07:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/04/12/preventing-a-hotfix/</loc>
+<lastmod>2015-04-12T16:13:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/07/02/how-into-code-review/</loc>
+<lastmod>2015-07-02T07:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/07/02/igniting-your-passion-again/</loc>
+<lastmod>2015-07-02T07:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/2015/11/08/open-source-contribution/</loc>
+<lastmod>2015-11-08T06:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8080/about/</loc>
+</url>
+<url>
+<loc>http://localhost:8080/contact/</loc>
+</url>
+<url>
+<loc>http://localhost:8080/</loc>
+</url>
+<url>
+<loc>http://localhost:8080/page2/</loc>
+</url>
+<url>
+<loc>http://localhost:8080/page3/</loc>
+</url>
 </urlset>

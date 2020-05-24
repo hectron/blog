@@ -1,6 +1,6 @@
 # Site settings
 title:       Hector's Blog
-email:       labeledloser@gmail.com
+email:       hrios10@gmail.com
 author:      Hector Rios
 description: "Hector's tech blog"
 baseurl:     "/blog"
@@ -9,14 +9,14 @@ url:         "http://hectron.github.io"
 # Server configuration stuff
 # These settings are for a Vagrant machine which is bound to port 8080
 port: 8080
-host: 0.0.0.0
+host: 127.0.0.1
 
 
 # Google analytics
 google_analytics:
 
 # Optional features
-animated:           false
+animated:           true
 show_related_posts: false
 show_post_footers:  false
 
@@ -43,5 +43,6 @@ permalink:    pretty
 paginate:     3
 sass:
   compressed: true
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-paginate
