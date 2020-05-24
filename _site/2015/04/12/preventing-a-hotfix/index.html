@@ -8,13 +8,14 @@
     <meta name="description" content="A hot-fix was going to take place for a front-end intranet application until we found a hacky patch.">
     <meta name="author" content="Hector Rios">
     <meta name="keywords" content="">
-    <link rel="canonical" href="http://hectron.github.io/blog/2015/04/12/preventing-a-hotfix/">
+    <link rel="canonical" href="http://localhost:8080/2015/04/12/preventing-a-hotfix/">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/blog/css/pixyll.css?201511092203" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?202005232241" type="text/css">
 
     <!-- Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&display=swap' rel='stylesheet' type='text/css'>
+
     
 
     <!-- Open Graph -->
@@ -23,7 +24,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Delaying a front-end hotfix">
     <meta property="og:description" content="Hector's tech blog">
-    <meta property="og:url" content="http://hectron.github.io/2015/04/12/preventing-a-hotfix/">
+    <meta property="og:url" content="http://localhost:8080/2015/04/12/preventing-a-hotfix/">
     <meta property="og:site_name" content="Hector's Blog">
 
     <!-- Icons -->
@@ -43,15 +44,15 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 
-<body class="">
+<body class="animated fade-in-down">
   <div class="site-wrap">
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <a href="http://localhost:8080" class="site-title">Hector's Blog</a>
       <nav class="site-nav right">
-        <a href="/blog/about/">About</a>
-<a href="/blog/contact/">Contact</a>
+        <a href="/about/">About</a>
+<a href="/contact/">Contact</a>
 
       </nav>
       <div class="clearfix"></div>
@@ -83,7 +84,7 @@
 <p>This was done in Chrome by adding a “page” bookmark, and pasted the following
 into the URL of the bookmark:</p>
 
-<p><code>javascript:jQuery('.currency-options').toggle();</code></p>
+<p><code class="highlighter-rouge">javascript:jQuery('.currency-options').toggle();</code></p>
 
 <p>Whenever the end user would not be able to see the section, they simply click
 the new bookmark and the section would show up.</p>
@@ -94,7 +95,7 @@ the new bookmark and the section would show up.</p>
 
 <p>There was an error in one of our applications recently. The error involved a
 section in the DOM that was not displaying to the end user (but it <em>was</em> in the
-DOM). </p>
+DOM).</p>
 
 <p>I suspect that this error was the result of hot-fixing every day of our two week
 sprint. Let that sit.</p>
@@ -115,9 +116,9 @@ inspected the area of the front-end application where the content was missing.</
 
 <p>What happened was that there was bad data parsing being done on the app, and a
 callback was never being fired. The callback simply performed a
-<code>jQuery.toggle()</code> with the data that was being parsed.</p>
+<code class="highlighter-rouge">jQuery.toggle()</code> with the data that was being parsed.</p>
 
-<p>jQuery specifies that the <code>toggle()</code> method simply <code>Use true to show the element
+<p>jQuery specifies that the <code class="highlighter-rouge">toggle()</code> method simply <code class="highlighter-rouge">Use true to show the element
 or false to hide it.</code> Therefore all we needed to do is somehow call toggle on
 that element whenever a user tried to view it.</p>
 
@@ -140,7 +141,7 @@ development. Luckily, we <strong>only support the latest version of Google Chrom
 
 <p>The code I ended up writing was this:</p>
 
-<p><code>javascript:jQuery('.currency-options').toggle();</code></p>
+<p><code class="highlighter-rouge">javascript:jQuery('.currency-options').toggle();</code></p>
 
 <p>We packaged that up into a bookmark for users to have in their Chrome bookmarks
 toolbar, and before you knew it, all of our users who did not have access to
@@ -149,7 +150,7 @@ those fields were now pleased to be able to check out and edit their values.</p>
 <h2 id="final-notes">Final notes</h2>
 
 <p>If you’re reading this blog, then you know that I try to follow standard
-procedures but often have to deviate from them in order to accomplish something. </p>
+procedures but often have to deviate from them in order to accomplish something.</p>
 
 <p>Unfortunately, we were in a position where we didn’t want to modify production
 code, but wanted to get a temporary fix our as soon as possible. This
@@ -167,19 +168,5 @@ work-around worked just fine and it gave us enough breathing room to make a
       </div>
     </div>
   </div>
-
-  <footer class="footer">
-  <div class="p2 wrap">
-    <div class="measure mt1 center">
-      <small>
-        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
-      </small>
-    </div>
-  </div>
-</footer>
-
-
-
 </body>
 </html>

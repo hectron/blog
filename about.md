@@ -6,17 +6,14 @@ permalink: /about/
 
 I'm Hector.
 
-I've been working in the tech world since 2008, and consider myself a Polymath.
-I live in Chicago proper and work for [Shoplocal](http://aboutshoplocal.com),
-where I work as a contractor for our sister company, [BLiNQ Media](http://blinqmedia.com/).
+I've been working in the tech world since 2008. I am a Chicago native, and
+currently work at [Amount](https://www.amount.com) as an engineering manager.
 
-At Shoplocal, I worked on mostly Javascript along with some C# and Python. Since
-working with BLiNQ media, I've been working the full stack: Ruby, Node, Postgres,
-MongoDB, Thrift and RabbitMQ.
+I started this blog back in 2015, with the intention of writing what I've
+learned, written in such that individuals from different backgrounds can easily
+digest the information.
 
-This blog is not meant for me to boast; The primary purpose of this blog is to 
-be educational. Every programmer must learn, even if the process is hard. If 
-anything, this blog represents the seemingly easy issues that stump me.
+Since then, I've focused a little less on programming itself and more general
+how to deal with organizational conflict and management. I don't know how often
+I'll actually write to this blog, but keep your eyes peeled.
 
-With that in mind, please let me know if anything I blog about is incorrect or
-could be done more efficiently.

@@ -8,13 +8,14 @@
     <meta name="description" content="If you are paranoid like me, you make a lot of commits. Sometimes, you need to arrange changes in logical segments.">
     <meta name="author" content="Hector Rios">
     <meta name="keywords" content="">
-    <link rel="canonical" href="http://hectron.github.io/blog/2015/02/22/rewriting-git-history/">
+    <link rel="canonical" href="http://localhost:8080/2015/02/22/rewriting-git-history/">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/blog/css/pixyll.css?201511092203" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?202005232241" type="text/css">
 
     <!-- Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&display=swap' rel='stylesheet' type='text/css'>
+
     
 
     <!-- Open Graph -->
@@ -23,7 +24,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Rewriting Git history for fun and profit">
     <meta property="og:description" content="Hector's tech blog">
-    <meta property="og:url" content="http://hectron.github.io/2015/02/22/rewriting-git-history/">
+    <meta property="og:url" content="http://localhost:8080/2015/02/22/rewriting-git-history/">
     <meta property="og:site_name" content="Hector's Blog">
 
     <!-- Icons -->
@@ -43,15 +44,15 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 
-<body class="">
+<body class="animated fade-in-down">
   <div class="site-wrap">
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="http://hectron.github.io/blog" class="site-title">Hector's Blog</a>
+      <a href="http://localhost:8080" class="site-title">Hector's Blog</a>
       <nav class="site-nav right">
-        <a href="/blog/about/">About</a>
-<a href="/blog/contact/">Contact</a>
+        <a href="/about/">About</a>
+<a href="/contact/">Contact</a>
 
       </nav>
       <div class="clearfix"></div>
@@ -83,9 +84,9 @@
 <p>You can appear like a competent programmer by rewriting your commit
 history with the following commands:</p>
 
-<p><code>git reset HEAD~n</code> where n is the number of prior commits.</p>
+<p><code class="highlighter-rouge">git reset HEAD~n</code> where n is the number of prior commits.</p>
 
-<p><code>git add --patch</code> to select the changes you want to include in a commit.</p>
+<p><code class="highlighter-rouge">git add --patch</code> to select the changes you want to include in a commit.</p>
 
 <hr />
 
@@ -119,11 +120,11 @@ own commit.</p>
 
 <p>Here is what my original commit looked like:</p>
 
-<pre><code>commit 23106d0d38bd5a774d61f4632839d6fb61f20c66 Author: Hector Rios
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>commit 23106d0d38bd5a774d61f4632839d6fb61f20c66 Author: Hector Rios
 &lt;my@email.com&gt; Date:   Fri Feb 13 15:26:22 2015 -0600
 
     Updated my Contact page.
-</code></pre>
+</code></pre></div></div>
 
 <h2 id="breaking-the-bad">Breaking (the) bad</h2>
 
@@ -131,13 +132,13 @@ own commit.</p>
 that we can split them up into individual commits. To do this, do the
 following:</p>
 
-<p><code>git reset HEAD^</code></p>
+<p><code class="highlighter-rouge">git reset HEAD^</code></p>
 
 <p>This will go back one commit and unstage your commit’s changes. So now,
-you want to run the command <code>git add --patch</code>. This will bring an
+you want to run the command <code class="highlighter-rouge">git add --patch</code>. This will bring an
 interactive prompt in which you can select whether or not to stage that
 change. In our case, we want to include only the changes we made to the
-<code>*.html</code> file.</p>
+<code class="highlighter-rouge">*.html</code> file.</p>
 
 <p>Once we selected all the changes, we commit that change, and move on to
 the next file. When we do this to our stylesheets and javascript files,
@@ -152,10 +153,10 @@ that instead now.</p>
 need to undo all three commits. I personally squash the commits and then
 repeat the trick above. So the commands look like:</p>
 
-<pre><code>git rebase -i HEAD~3 (Then squash them into one commit) 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase -i HEAD~3 (Then squash them into one commit) 
 git reset HEAD^ 
 git add --patch (select the chunks that relate to your feature)
-</code></pre>
+</code></pre></div></div>
 
 <p>This way you can combine the changes per feature and commit them
 individually.</p>
@@ -178,19 +179,5 @@ and commit them. This way, your git history is logical.</p>
       </div>
     </div>
   </div>
-
-  <footer class="footer">
-  <div class="p2 wrap">
-    <div class="measure mt1 center">
-      <small>
-        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
-        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
-      </small>
-    </div>
-  </div>
-</footer>
-
-
-
 </body>
 </html>
