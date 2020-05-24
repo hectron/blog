@@ -1,45 +1,28 @@
-# Pixyll
+# Hector's Blog
 
-[pixyll.com](http://www.pixyll.com)
+This blog uses [Pixyll](http://www.pixyll.com) as the theme.
 
 ![Pixyll screenshot](https://cloud.githubusercontent.com/assets/1424573/3847467/134aa236-1e66-11e4-8421-4e8c122118dc.png)
 
-Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
 
-It's pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.
+## Running the blog
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+Make sure you have [Bundler](http://bundler.io) installed. That will install [Jekyll](http://jekyllrb.com) for you.
 
-中文版 <https://github.com/ee0703/pixyll-zh-cn>.
+```bash
+bundle install
 
-## Getting Started
+# Check out what Jekyll can do by running
+bundle exec jekyll
 
-If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
+# Serve the website as follows
+bundle exec jekyll serve
 
-### Installing Jekyll
-
-If you don't have Jekyll already installed, you will need to go ahead and do that.
-
-```
-$ gem install jekyll
+# Use the --watch flag to live reload
+bundle exec jekyll serve --watch
 ```
 
-#### Verify your Jekyll version
-
-It's important to also check your version of Jekyll since this project uses Native Sass which
-is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
-
-```
-$ jekyll -v
-# This should be jekyll 2.0.0 or later
-```
-
-### Fork, then clone
-
-Fork the repo, and then clone it so you've got the code locally.
-
-### Modify the _config.yml
+### Configuring
 
 The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
 for the Jekyll site. The defaults are:
@@ -58,20 +41,6 @@ markdown: kramdown
 permalink: pretty
 paginate: 3
 ```
-
-### Jekyll Serve
-
-Then, start the Jekyll Server. I always like to give the `--watch` option so it updates the generated HTML when I make changes.
-
-```
-$ jekyll serve --watch
-```
-
-Now you can navigate to `localhost:4000` in your browser to see the site.
-
-### Using Github Pages
-
-You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
 
 #### A configuration tweak if you're using a gh-pages sub-folder
 
